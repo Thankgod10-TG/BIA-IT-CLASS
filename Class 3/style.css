@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.profile {
+  width: 90%;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+h1,
+p,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 30px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  gap: 30px;
+}
+span {
+  color: rgba(151, 151, 151, 0.922);
+}
+
+.about h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  width: 80%;
+}
+
+.about p {
+  font-size: 16px;
+  font-weight: 300px;
+  color: gray;
+  text-align: center;
+  width: 100%;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  width: 80%;
+  gap: 20px;
+}
+
+.description h3 {
+  font-size: 20px;
+  width: 60%;
+  font-weight: 700;
+}
+
+.description p {
+  color: gray;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 300;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #ececec;
+  position: sticky ;
+  top: 0;
+}
+
+header h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.buttons a button {
+  padding:15px 20px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 1px solid gray;
+  background-color: transparent;
+  cursor: pointer;
+}
+.buttons a .button1 {
+  background-color: #000000;
+  color: white;
+  border: 1px solid black;
+}
+
+.buttons a .button1:hover {
+  background-color: #80808002;
+  color: black;
+  border: none;
+  border: 1px solid grey;
+  transition: all 0.5s ease-in-out;
+}
