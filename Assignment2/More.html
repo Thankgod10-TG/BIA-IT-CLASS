@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Learn More</title>
+    <style>
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        font-weight: 500;
+        cursor: pointer;
+        color: #220044;
+        border: 1px solid #220044;
+        padding: 10px;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(0px);
+        animation: move 0.5s ease-out 0s 1 normal backwards;
+        overflow: hidden;
+      }
+
+      button:hover {
+        background-color: transparent;
+        border: none;
+        font-weight: 500;
+        cursor: pointer;
+        color: #fff;
+        border: 1px solid #220044;
+        background-color: #220044;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(-5px);
+        padding: 10px;
+        border-radius: 50px;
+      }
+.back{
+  width: 20px;
+}
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h2>Learn More From <span>THEO</span></h2>
+        <a href="index.html" target="_blank"><button>Go Back <img src="./IMG/back.png"  class="back"></button></a>
+      </div>
+    </div>
+  </body>
+</html>
