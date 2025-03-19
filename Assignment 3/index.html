@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d12987d18d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent_container">
+      <!-- HEADER SECTION -->
+      <header>
+        <div class="logo">
+          <a href=""><img src="logo.png" alt="" /></a>
+        </div>
+        <div class="menu">
+          <a href=""> Order</a>
+          <a href="">Get In Touch</a>
+        </div>
+      </header>
+
+      <!-- BACKGROUND SECTION -->
+      <div class="image_div">
+        <div class="content">
+          <h2>Lamborghini <span style="color: orangered"> Revuelto</span></h2>
+          <p>
+            The Revuelto honors the Lamborghini tradition and ushers in a new
+            era even in its exterior design. While the car’s silhouette follows
+            the iconic single center line, the sharply sculpted lines and smooth
+            negative radiuses create a high-tech shape that puts the Revuelto
+            unmistakably in the new generation of Lamborghini supercars. The
+            iconic V12 is celebrated by being on full display in the rea
+          </p>
+          <a href="#about"><button>About Us</button></a>
+        </div>
+      </div>
+
+      <video src="vid.mp4" id="myVideo" autoplay></video>
+      <!-- ABOUT SECTION -->
+      <div id="about">
+        <div class="description">
+          <h4>About us</h4>
+          <h2>A V12 Engine Car</h2>
+          <p>
+            Lamborghini Revuelto is a high perfomance electricfied vehicle made
+            to combine the sound of the engine and the light of a new begining.
+            Thunder and Lighting finally together
+          </p>
+          <button id="playButton">Start & Rev</button>
+
+          <audio id="myAudio" src="car.mp3"></audio>
+        </div>
+        <div>
+          <img src="car.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const audio = document.getElementById("myAudio");
+      const button = document.getElementById("playButton");
+      const video = document.getElementById("myVideo");
+      const mute = document.getElementById("mute");
+
+      button.addEventListener("click", function () {
+        if (audio.paused) {
+          audio.play();
+          button.textContent = "Stop Engine";
+        } else {
+          audio.pause();
+          button.textContent = "Start & Rev";
+        }
+      });
+
+      let lastScrollY = window.scrollY; // Store the initial scroll position
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY < lastScrollY) {
+          // Scrolling UP → Mute
+          video.muted = false;
+        } else {
+          // Scrolling DOWN → Unmute
+          video.muted = true;
+        }
+        lastScrollY = window.scrollY; // Update last scroll position
+      });
+    </script>
+  </body>
+</html>
