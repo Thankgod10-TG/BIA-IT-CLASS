@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="school.css" />
+    <title>Spark Store</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <header>
+        <h1>Spark School</h1>
+        <div class="search">
+          <input
+            type="text"
+            id="searchInput"
+            name="search"
+            placeholder="Search for products..."
+          />
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Students Store</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="title">
+          <h1>Welcome to Spark School</h1>
+          <p>
+            Explore our collection of Best Students and enjoy educational excellence.
+          </p>
+        </div>
+        <div class="students">
+          <h2>Featured Students</h2>
+          <div class="students-filter">
+            <select name="genderFilter" id="genderFilter">
+              <option value="all">All Students</option>
+              <option value="male">Male Students</option>
+              <option value="female">Female Students</option>
+            </select>
+          </div>
+          <div id="studentList" class="featured-students">
+          <!-- For Items -->
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2023 Spark School. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="school.js"></script>
+  </body>
+</html>

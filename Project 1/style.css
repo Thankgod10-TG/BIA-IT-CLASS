@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
+}
+
+:root{
+    --primary-color: #8c34ff;
+    --secondary-color: #f1effc;
+    --text-color: #000;
+    --light-text-color: #727272fd;
+    --background-color: #fff;
+    --active-link-color: #9748fd;
+    --inactive-link-color: #898888;
+    --pro-color: #fec459;
+    --button-boder: 15px;
+    --card-border: 10px;
+    --active-button-color: #8c33ff;
+    --card-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    --card-shadow-hover:  0px 0px 20px rgba(0,0,0,0.2);
+    --p-color: #5f5f5f;
+}
+
+
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    align-items: start;
+    justify-content: center;
+}
+/* ION-ICON START */
+ion-icon{
+    font-size: 34px;
+    color: var(--primary-color);
+}
+
+ion-icon:hover{
+    color: var(--active-button-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.white-icon{
+    color: var(--secondary-color);
+}
+
+.menu-icon{
+    display: none;
+}
+/* ION-ICON END */
+
+/* ==================================================LINK START ================================================ */
+
+a{
+    text-decoration: none;
+    color: var(--inactive-link-color);
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 400;
+    /* padding: 0px 10px; */
+}
+
+a:hover{
+    color: var(--active-link-color);
+    font-weight: 600;
+}
+.link-active{
+    color: var(--active-link-color);
+    font-weight: 600;
+}
+
+/* ================================================== LINK END ================================================ */
+/* ================================================== BUTTON START ================================================ */
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: var(--button-boder);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-btn{
+    background-color: var(--secondary-color);;
+    color: var(--light-text-color);
+}
+
+.outline-btn{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.filled-btn{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    
+}
+.rounded-btn{
+    border-radius: 50px;
+}
+/* ================================================== BUTTON END ================================================*/
+
+/* ================================================== TEXT START ================================================ */
+.title{
+    font-size: 55px;
+    font-weight: 900;
+    color: var(--text-color);
+}
+
+.subtitle{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.text{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--light-text-color)
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 25px;
+}
+
+.logo-text{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+/* ================================================== TEXT END ================================================ */
+/* ================================================== HEADER START ================================================ */
+ header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--card-shadow);
+ }
+
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+ }
+/* ================================================== HEADER END ================================================ */
+/* ================================================== HERO START  ================================================ */
+ .hero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+ } 
+ .hero-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+    width: 45%;
+
+ }
+ .hero img{
+    width:50%;
+ }
+
+
+
+ .hero-content h1{
+    font-size: 65px;
+    font-weight: bold;
+ }
+
+ .specific{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 2px;
+    border-radius: var(--button-boder);
+ }
+
+ .hero-content p{
+    font-size:17px ;
+    color:var(--light-text-color);
+    padding: 0px 20% 0px 0px;
+    line-height: 1.5;
+ }
+ .hero-buttons{
+    display: flex;
+    gap: 20px;
+ }
+/* ================================================== HERO END  ================================================ */
+/* ================================================== BASIC PACK SECTION START  ================================================ */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .heading{
+    text-align: center;
+    width: 90%;
+}
+
+.container .heading p{
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    color: gray;
+}
+
+.container .heading h3{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 70px;
+}
+
+ span{
+    color: var(--primary-color);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 10px 100px 10px;
+    gap: 20px;
+}
+
+.card .item{
+    width: 30% ;
+    height: 250px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px 20px; 
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0px);
+    overflow: hidden;
+    gap: 15px 20px;
+}
+
+.card p{
+    color: #5f5f5f;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+     'Helvetica Neue', sans-serif;
+     
+}
+
+.card .item:hover{
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.card .item img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.card .item button{
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--active-link-color);
+    border: 1px solid var(--active-button-color);
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0px);
+    animation: move 0.5s ease-out 0s 1 normal backwards;
+    overflow: hidden;
+}
+
+.card .item button:hover{
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid var(--active-button-color);
+    background-color: var(--active-button-color);
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-5px);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/* ================================================== BASIC PACK SECTION END  ================================================ */
+/* ================================================== SERVICE SECTION END  ================================================ */
+.section-item{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    column-gap: 50px;
+}
+
+.section-content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.section-content h3{
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 400;
+    border-radius: var(--button-boder);
+    color: #fff;
+}
+.section-content h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.section-content p{
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 85%;
+    color: var(--p-color);
+}
+
+.section-item img{
+    width: 45%;
+    border-radius: var(--button-boder);
+}
+
+.section-item2{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+/* ================================================== SERVICE SECTION END  ================================================ */
+/* ================================================== PRICING SECTION START  ================================================ */
+.plan_icon{
+    background-color: var(--secondary-color);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+/* ================================================== PRICING SECTION END  ================================================ */

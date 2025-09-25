@@ -1,0 +1,289 @@
+@import 'responsiveness.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 1fr 1fr 50px 1fr 1fr;
+    grid-template-areas:
+        "item1 item2 item3 item4 "
+        "item1 center center item4 "
+        "item6 center center item4 "
+        "item6  center center item5"
+        "item6  item8 item9 item9";
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: start;
+    padding-left: 20px;
+    width: initial;
+    height: inherit;
+    border: 4px solid rgba(68, 68, 68, 0.527);
+}
+
+
+.item1 {
+    grid-area: item1;
+    background-color: #f4d6f2;
+    position: relative;
+    overflow: hidden;
+    padding-left: 0px;
+}
+
+.item1 img{
+    position: absolute;
+    object-fit: cover;
+    object-position: left;
+    width: 100%;
+    height: 100%;
+}
+
+.item2 {
+    grid-area: item2;
+    justify-content: center;
+    background-color: #4c9175;
+    color: #fff86b;
+    font-size: 1.4em;
+    text-align: flex-start;
+    padding: 20px 30px 40px;
+}
+
+.item3 {
+    grid-area: item3;
+    background-color: #6a6b6d;
+    color: #fff86b;
+    padding: 10px 30px 10px;
+}
+
+.item3 h1{
+    font-size: 3rem;
+}
+
+.item4 {
+    grid-area: item4;
+    gap: 10px;
+    padding: 30px auto 10px;
+    min-height: 300px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #adb0b6;
+}
+
+.item p {
+    /* font-size: 1.3rem; */
+    font-weight: bold;      
+}
+
+.item4 h1 {
+    font-size: 3rem;
+    
+}
+
+.item4 span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.teams .images {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-left: -25px;
+    overflow: hidden;
+}
+
+.teams .images img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.item5 {
+    grid-area: item5;
+    background-color: #e8e4ff;
+    padding-left: 0px;
+}
+
+.item6 {
+    grid-area: item6;
+    gap: 20px;
+    min-height: 340px;
+    padding-top: 1rem;
+    align-items: flex-start;
+    justify-content: start;
+    background-color: #afa2fc;
+}
+
+
+
+.item6 .smart_grid {
+    display: grid;
+    grid-template-columns: 100px 50px;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+        "img1   img2"
+        "img3   img4";
+    column-gap: 20px;
+    justify-content: center;
+    scale: 0.7;
+    margin-top: -20px;
+}
+
+.img1 {
+    grid-area: img1;
+    width: inherit;
+    height: 200px;
+    background: red;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 10%;
+}
+
+.img2 {
+    grid-area: img2;
+    width: 50px;
+    height: 50px;
+    background: green;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img2 img{
+     width: 100%;
+    height: 100%;
+}
+
+.img3 {
+    grid-area: img3;
+    width: 50px;
+    height: 50px;
+    margin-top: 130px;
+    background: blue;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.img4 {
+    grid-area: img4;
+    width: 100px;
+    height: 200px;
+    background: blue;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.img4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% 100%;
+}
+
+.item7 {
+    position: relative;
+    grid-area: center;
+    grid-column: span 2;
+    overflow: hidden;
+    padding: 0;
+       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* background-color: orange; */
+    object-fit: cover;
+}
+
+
+.item7 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.item8 {
+    grid-area: item8;
+    background-color: #f8fe9e;
+}
+
+.item9 {
+    grid-area: item9;
+    background-color: #4c9175;
+    padding: 10px;
+}
+
+.highlight-text{
+     display: inline;
+    background-color: #fff86b; /* soft yellow */
+    padding: 8px 10px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1rem !important;
+    color: #000;
+}
+
+.item6 .highlight-text{
+         display: inline;
+    background-color: #000; /* soft yellow */
+    padding: 10px 10px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1rem !important;
+    color: #fff;
+}
+
+.item9 .highlight-text{
+    display: inline;
+    background-color: #2d6951;; /* soft yellow */
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1.6rem !important;
+    color: #fff86b;
+}
+
+.detail{
+    font-size: .8rem !important;
+    font-weight: bold;
+    line-height: 1.7;
+}

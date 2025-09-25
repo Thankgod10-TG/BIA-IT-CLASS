@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Playwrite+MX+Guides&family=Sankofa+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <style>
+        li, h2, button{
+            font-family: "Sankofa Display", sans-serif;
+        }
+      .hero-content h3 {
+        font-family: "Sankofa Display", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="w-screen h-screen flex flex-col bg-[url(hero3.jpg)] bg-no-repeat bg-cover"
+    >
+      <nav class="flex justify-around pt-8 text-white text-3xl">
+        <h2 class="hover:text-[#2AFFFF] cursor-[url(cursor.cur),_pointer]">Logo</h2>
+        <ol class="flex gap-x-5">
+          <li class="hover:text-[#2AFFFF] cursor-[url(cursor.cur),_pointer]">Home</li>
+          <li class="hover:text-[#2AFFFF] cursor-[url(cursor.cur),_pointer]">About</li>
+          <li class="hover:text-[#2AFFFF] cursor-[url(cursor.cur),_pointer]">Testimonial</li>
+        </ol>
+        <button>Contact Us</button>
+      </nav>
+
+      <div class="hero-content text-white pt-25 px-15">
+        <h3 class="text-8xl w-[50%] ">
+          Imagine your imagination <br />
+          Coming to the
+          <br />
+          real word !!!
+        </h3>
+      </div>
+    </section>
+  </body>
+</html>

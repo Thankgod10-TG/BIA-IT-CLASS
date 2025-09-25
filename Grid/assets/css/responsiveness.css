@@ -1,0 +1,126 @@
+@media(max-width: 768px){
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 200px;
+    grid-template-areas:
+        "item1 item1"
+        "item2 item3"
+        "item4 item4"
+        "center center"
+        "item5  item5"
+        "item6  item6"
+        "item8  item8"
+        "item9  item9"
+        ;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 10px;
+    scale: 1;
+    padding: 10px;
+}
+
+.item1 {
+    grid-area: item1;
+}
+.item2 {
+    grid-area: item2;
+}
+.item3 {
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+    position: relative;
+}
+
+.item4 .teams{
+    position: absolute;
+    top: 2.9rem;
+    right: -80px;
+}
+.item5 {
+    grid-area: item5;
+}
+.item6 {
+    grid-area: item6;
+    position: relative;
+}
+
+.item6 .smart_grid {
+    position: absolute;
+    right: 40px;
+    bottom:80px ;
+    display: grid;
+    grid-template-columns: 100px 50px;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+        "img1   img2"
+        "img3   img4";
+    column-gap: 20px;
+    justify-content: center;
+    scale: 0.8;
+    margin-top: -20px;
+}
+
+
+
+.item7 {
+    grid-area: center;
+    min-height: 300px;
+}
+.item8 {
+    grid-area: item8;
+    padding: 20px;
+}
+.item9{
+    grid-area: item9;
+    padding: 20px;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+      .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "item1 item2"
+        "item1 item3"
+        "item4 center"
+        "item6  item5"
+        "item6  item5"
+        "item8  item9"
+        ;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.item5 {
+    grid-area: item5;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.item5 img{
+    width: 100%;
+    scale: 1.5;
+}
+
+.item7 {
+    grid-area: center;
+    min-height: 300px;
+}
+}

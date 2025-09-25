@@ -1,0 +1,237 @@
+:root{
+  --bg_color: rgba(223, 223, 223, 0.842);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+body{
+     background-color: var(--bg_color);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg_color);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1fr;
+    grid-template-rows: 400px 200px;
+    grid-template-areas: 
+    "box-1 box-1 box-2"
+    "box-3 box-4 box-5"
+    ;
+    width: 100%;
+    padding: 2em 2em;
+}
+
+.box{
+    border: 1px solid black;
+}
+
+
+.box1{
+    grid-area: box-1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 70px;
+    padding-top: 40px;
+     border-left: none;
+}
+
+.box1 h1{
+    font-size: 5em;
+    line-height: 1;
+    
+}
+
+span{
+    padding-left: 2.4em;
+}
+
+.avatars{
+    width: 300px;
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    margin-left: 15px;
+}
+
+.avatars img{
+    border: 4px solid white;
+    border-radius: 50px;
+    margin-right: -15px;
+}
+
+form{
+    width: 65%;
+    height: 10vh;
+    border-radius: 50px;
+    padding:0px 10px 0px 10px;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+
+form input{
+    width: 100%;
+    height: 8vh;
+    padding-left: 15px;
+    background-color: var(--bg_color);
+    outline-color:none;
+    border: none;
+}
+
+form input:focus{
+    outline:none;
+}
+
+form input::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+form button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    padding: 15px 5px;
+    border: none;
+    font-size: 1em;
+    border-radius: 60px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-icon{
+    font-size: 1.3em;
+}
+
+
+
+.box2{
+    grid-area: box-2;
+}
+
+.box3{
+    grid-area: box-3;
+    padding: 15px 30px 5px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     border-left: none;
+     background-color: black;
+     color: white;
+}
+
+.box3 .team{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.box3 h1{
+    font-size: 5em;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.box3 h1 span{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 50px;
+    color: #57ff57;
+}
+.box4{
+    grid-area: box-4;
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2ed62e;
+}
+
+ .btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+ .btns p{
+   padding:10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.btns-bt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns-bt p{
+    font-size: 1.2em;
+}
+
+.btns-bt a{
+     width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+}
+.box5{
+    grid-area: box-5;
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: none;
+    border-bottom: none;
+
+}
+
+.box5 .btns-bt .avatar {
+    width:100px;
+    margin-left: 15px;
+}
+.box5 .btns-bt .avatar img{
+    margin-left: -15px;
+    border: 3px solid white;
+    border-radius:50px ;
+}
